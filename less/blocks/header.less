@@ -1,0 +1,60 @@
+.header {
+  padding-bottom: 12px;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #e9e7e4;
+  border-bottom: 1px solid #a8a8a8;
+  box-shadow: 0 0 10px 5px rgba(168,168,168, 0.3);
+}
+
+.header__nav {
+  flex-grow: 1;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__cart {
+  width: 43px;
+  height: 49px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-image: url(../img/icon-basket.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.header__phones {
+  padding-left: 135px;
+  text-align: center;
+}
+
+.header__link {
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}

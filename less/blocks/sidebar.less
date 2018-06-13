@@ -1,0 +1,132 @@
+.sidebar {
+  position: relative;
+  width: 240px;
+  padding-top: 10px;
+  
+  &::before {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-color: #f0f0f0;
+  }
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 940px;
+}
+
+.sidebar__drop,
+.sidebar__list {
+  .reset();
+  list-style-type: none;
+}
+
+.sidebar__title {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  
+  &::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 1px;
+    background-color: #c8c8c8;
+  }
+  
+  &--opened::after {
+    content: "-";
+  }
+}
+
+.sidebar__drop {
+  display: none;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 1px;
+    background-color: #c8c8c8;
+  }
+}
+
+.sidebar__label {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  
+  span {
+    color: #8d8d8d;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 2px;
+    width: 13px;
+    height: 12px;
+    background-image: url(../img/icon-check.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.sidebar__checkbox {
+  display: none;
+}
+
+.sidebar__checkbox:checked + label::after {
+  display: block;
+}
+
+.sidebar__btn {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
