@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
+  .title {
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
 }
 
 .related__block {
@@ -15,6 +20,7 @@
 .related__list {
   .reset();
   list-style-type: none;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -27,4 +33,20 @@
   padding-right: 15px;
   text-align: center;
   font-size: 12px;
+  
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    margin-top: 30px;
+    line-height: 2;
+  }
+}
+
+.related__text {
+  margin-bottom: 20px;
 }
