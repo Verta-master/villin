@@ -9,12 +9,23 @@
   &::after {
     content: ">";
     position: absolute;
-    top: 0;
-    right: -10px;
+    top: -2px;
+    right: -12px;
   }
   
   &:hover,
   &:active {
     text-decoration: underline;
+  }
+  
+  &--active {
+    &::after {
+      display: none;
+    }
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
   }
 }
