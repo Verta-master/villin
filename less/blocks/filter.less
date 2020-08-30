@@ -1,0 +1,269 @@
+.breadcrumbs {
+  padding-left: 0;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar {
+  padding-top: 0;
+  width: 250px;
+}
+
+.main {
+  padding-top: 0;
+}
+
+.filter {
+  margin-bottom: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #22272E;
+  background: #C5C7CB;
+  border-radius: 2px;
+}
+
+.filter__title {
+  margin: 0;
+  padding: 23px 20px;
+  padding-bottom: 15px;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.filter__price,
+.filter__field {
+  position: relative;
+  padding: 14px 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.filter__subtitle {
+  margin: 0;
+  padding-right: 60px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.filter__down {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.3);
+  
+  svg {
+    stroke: #293038;
+    .transition();
+  }
+  
+  &:hover svg,
+  &:active svg {
+    stroke: #DD9400;
+    .transition();
+  }
+  
+  &--top {
+    transform: rotate(180deg);
+  }
+}
+
+.filter__btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.filter__btn {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  width: 98px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  color: #442F05;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.3);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #DD9400;
+    .transition();
+  }
+  
+  &--find {
+    background-color: #DD9400;
+    background-image: linear-gradient(94.53deg, rgba(255,255,255,0.4) 1.19%, rgba(255, 255, 255, 0) 100%);
+    
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 9px;
+      right: 9px;
+      top: 19px;
+      bottom: -3px;
+      background: #AB7200;
+      opacity: 0.5;
+      filter: blur(20px);
+      border-radius: 2px;
+    }
+    
+    &:hover,
+    &:active {
+      background-image: none;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.filter__dropdown {
+  display: none;
+  padding-top: 17px;
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+  }
+}
+
+.filter__checkbox:checked + .filter__label::before {
+  background-color: #DD9400;
+  background-image: url(../img/icons/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 9px;
+  border-color: #DD9400;
+}
+
+.filter__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  margin-top: 15px;
+}
+
+.filter__block {
+  position: relative;
+  
+  &::before {
+    content: "от";
+    position: absolute;
+    z-index: 5;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #98ACB2;
+  }
+  
+  &--max::before {
+    content: "до";
+  }
+}
+
+.filter__input {
+  display: block;
+  width: 90px;
+  height: 40px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.filter__range {
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px #98ACB3;
+    cursor: pointer;
+    outline: none;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 6px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -7px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    background: #98ACB3;
+    border-radius: 5px;
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    background: linear-gradient(270deg, #DD9400 7.14%, #FFC95B 95.58%);
+    border-radius: 5px;
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 5px;
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
+}
