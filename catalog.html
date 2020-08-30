@@ -54,7 +54,7 @@
   </header>
   <nav class="nav">
     <div class="wrapper">
-      <button type="button" class="nav__btn"></button>
+      <button type="button" class="nav__btn">Каталог</button>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#" class="nav__link">Дверные ручки</a>
@@ -391,6 +391,23 @@
     $(this).toggleClass('filter__down--top');
     $(this).next().slideToggle();
   });
+    
+  //Mobile nav
+  $('.nav__btn').click(function() {
+    $('.nav__list').slideToggle();
+    $(this).toggleClass('nav__btn--close');
+  });
+  
+  if (window.innerWidth < 1022) {
+    $('.nav__down').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('nav__down--top');
+    });
+    
+    $('.filter__title').click(function() {
+      $('.filter__form').slideToggle();
+    });
+  }
   </script>
 </body>
 </html>
