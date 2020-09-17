@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Villin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style-old.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header-new">
+    <div class="wrapper">
+      <div class="header-new__top">
+        <div class="logo">
+          <img src="img/logo.png" alt="Villin">
+          <p>фурнитура и светильники</p>
+        </div>
+        <form action="#" class="search search--new">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Поиск</span></button>
+        </form>
+        <div class="header-new__phones">
+          <div><a href="tel:+74951165040">8 (495) 116-50-40</a><a href="tel:+74992420380">8 (499) 242-03-80</a></div>
+          <span>звонок из Москвы бесплатный</span>
+        </div>
+        <a href="#" class="header-new__cart">
+          <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.44048 10.6667H3.97619L1 30H26L23.0238 10.6667H18.5595M8.44048 10.6667V6.05952C8.44048 3.26523 10.7057 1 13.5 1V1C16.2943 1 18.5595 3.26523 18.5595 6.05952V10.6667M8.44048 10.6667H18.5595M8.44048 10.6667V15.1979M18.5595 10.6667V15.1979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="header-new__number">3</span>
+        </a>
+      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">ГЛАВНАЯ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ТОВАРЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ДОСТАВКА и ОПЛАТА</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">БРЕНДЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">КАТАЛОГИ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ПРАЙСЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="wrapper">
+      <button type="button" class="nav__btn">Каталог</button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">фиксаторы и накладки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные замки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные петли</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Оконные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem nav__subitem--active"><a href="#">Magnum</a></li>
+              <li class="nav__subitem"><a href="#">Ramos</a></li>
+              <li class="nav__subitem"><a href="#">Mestre</a></li>
+              <li class="nav__subitem"><a href="#">Bron-Tek</a></li>
+              <li class="nav__subitem"><a href="#">Coba</a></li>
+              <li class="nav__subitem"><a href="#">Venezia</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Ограничители</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Мебельные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="promo">
+      <div class="wrapper">
+        <div class="swiper-container promo__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide promo__slide">
+              <img src="img/images/banner.jpg" alt="Banner">
+              <div class="promo__info">
+                <p class="promo__title">Эксклюзивная дверная фурнитура европейского качества</p>
+                <div class="promo__text">Villin.ru работает с 2012 года и является специализированным интернет-магазином по продаже в России эксклюзивной дверной фурнитуры из Европы</div>
+                <a href="#" class="btn promo__btn">В каталог</a>
+              </div>
+            </div>
+            <div class="swiper-slide promo__slide">
+              <img src="img/images/banner.jpg" alt="Banner">
+              <div class="promo__info">
+                <p class="promo__title">Эксклюзивная дверная фурнитура европейского качества</p>
+                <div class="promo__text">Villin.ru работает с 2012 года и является специализированным интернет-магазином по продаже в России эксклюзивной дверной фурнитуры из Европы</div>
+                <a href="#" class="btn promo__btn">В каталог</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination promo__pagination"></div>
+          <div class="swiper-button-prev promo__prev"></div>
+          <div class="swiper-button-next promo__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="brand">
+      <div class="wrapper">
+        <div class="swiper-container brand__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brand__slide">
+              <img src="img/images/brand-1.png" alt="brand">
+            </div>
+            <div class="swiper-slide brand__slide">
+              <img src="img/images/brand-2.png" alt="brand">
+            </div>
+            <div class="swiper-slide brand__slide">
+              <img src="img/images/brand-3.png" alt="brand">
+            </div>
+            <div class="swiper-slide brand__slide">
+              <img src="img/images/brand-4.png" alt="brand">
+            </div>
+          </div>
+          <div class="swiper-button-prev brand__prev"></div>
+          <div class="swiper-button-next brand__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="tabs" id="tabs">
+      <div class="wrapper">
+        <div class="tabs__wrap">
+          <ul class="tabs__title">
+            <li class="tabs__name"><a href="#tabs-1">Хиты</a></li>
+            <li class="tabs__name"><a href="#tabs-2">Акции</a></li>
+            <li class="tabs__name"><a href="#tabs-3">Новинки</a></li>
+          </ul>
+          <a href="#" class="btn btn--border tabs__btn">В каталог</a>
+        </div>
+        <div class="tabs__field" id="tabs-1">
+          <div class="hit">
+            <ul class="hit__list">
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-1.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-2.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-3.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-4.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-4.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-3.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-1.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-2.jpg" alt="Хиты">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Хит</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__field" id="tabs-2">
+          <div class="hit">
+            <ul class="hit__list">
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-1.jpg" alt="Акция">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Акция</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-2.jpg" alt="Акция">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Акция</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__field" id="tabs-3">
+          <div class="hit">
+            <ul class="hit__list">
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-1.jpg" alt="Новинка">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Новинка</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+              <li class="hit__item">
+                <a href="#" class="hit__link">
+                  <figure class="hit__img">
+                    <img src="img/images/hit-2.jpg" alt="Новинка">
+                  </figure>
+                  <div class="hit__labels">
+                    <div class="hit__label">Новинка</div>
+                  </div>
+                  <div class="hit__info">
+                    <p class="hit__price">от <span>4364р.</span></p>
+                    <p class="hit__title">Ручка оконная Venezia "MONTE CRISTO" FW</p>
+                    <p class="hit__comment">французское золото + коричневый</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="benefits">
+      <div class="wrapper">
+        <p class="title-2">Наши преимущества</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-1.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Опыт</p>
+            <span>19 лет<br>опыта и качества</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-2.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Ассортимент</p>
+            <span>Ассортимент 20&nbsp;000 единиц</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-3.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Доставка</p>
+            <span>Доставка во все города РФ</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-4.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Свои склады</p>
+            <span>Склад более 500 м</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-5.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Опции</p>
+            <span>Розница и опт</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="text">
+      <div class="wrapper">
+        <p class="title-2">Заголовок SEO текста для сайта</p>
+        <div class="text__wrap">
+          <div class="text__info">
+            <p>Villin.ru работает с 2012 года и является специализированным интернет-магазином по продаже в России продукции компаний P.Bisschop и FS,  Германия;  Hager,  (вейцария; JNF, Португалия и Patinas Lighting, Венгрия.</p>
+            <p>Компания Villin.ru продает литые дверные ручки в Германии по классическим образцам с 1889 года из массивной латуни с последующей ручной обработкой и нанесением покрытия патины, хрома или никеля. Фабрика Hager, кроме латунной фурнитуры, производит также ручки из кованой стали с различными покрытиями - вороненая, оцинкованная, патинированная сталь.</p>
+            <p>Некоторые модели ручек и планок могут быть изготовлены не только в стандартном исполнении, для межкомнатных дверей, но и в увеличенном - для входных дверей. Дверные ручки JNF производятся из нержавеющей стали и на них могут нанесены специально разработанные фабрикой покрытия. Любую ручку можно заказать с любой розеткой или планкой (в пределах одного производителя).</p>
+            <p>Цены на дверные ручки указаны за комплект на одну дверь, включая крепежные шурупы с соответствующим покрытием. производит литые дверные ручки в Германии по классическим образцам с 1889 года из массивной латуни с последующей ручной обработкой и нанесением покрытия патины, хрома или никеля. Фабрика Hager, кроме латунной фурнитуры, производит также ручки из кованой стали с различными покрытиями - вороненая, оцинкованная, патинированная сталь . Некоторые модели ручек и планок могут быть изготовлены не только в стандартном исполнении, для межкомнатных дверей, но и в увеличенном - для входных дверей.</p>
+            <p>Дверные ручки JNF производятся из нержавеющей стали и на них могут нанесены специально разработанные фабрикой покрытия. Любую ручку можно заказать с любой розеткой или планкой (в пределах одного производителя). Цены на дверные ручки указаны за комплект на одну дверь, включая крепежные шурупы с соответствующим покрытием.</p>
+            <p>Некоторые модели ручек и планок могут быть изготовлены не только в стандартном исполнении, для межкомнатных дверей, но и в увеличенном - для входных дверей. Дверные ручки JNF производятся из нержавеющей стали и на них могут нанесены специально разработанные фабрикой покрытия. Любую ручку можно заказать с любой розеткой или планкой (в пределах одного производителя). Цены на дверные ручки указаны за комплект на одну дверь, включая крепежные шурупы с соответствующим покрытием.</p>
+            <p>Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек производства P.Bisschop, JNF  и Hager. Поворотные ручки могут быть установлены на любой розетке или планке в пределах ассортимента одного производителя.</p>
+          </div>
+          <figure class="text__img">
+            <img src="img/images/classic.jpg" alt="Classic">
+            <figcaption>Classic</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <section class="news">
+      <div class="wrapper">
+        <p class="title-2">Новости</p>
+        <a href="#" class="btn btn--border news__btn">все новости</a>
+        <ul class="news__list">
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news-1.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-06-20">20.06.2020</time>
+                <p class="news__title">Новость №1</p>
+                <p>Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек производства P.Bisschop, JNF  и Hager.</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news-2.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-06-20">20.06.2020</time>
+                <p class="news__title">Новость №1</p>
+                <p>Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек производства P.Bisschop, JNF  и Hager.</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news-3.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-06-20">20.06.2020</time>
+                <p class="news__title">Новость №1</p>
+                <p>Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек производства P.Bisschop, JNF  и Hager.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="Logo">
+          </div>
+          <div class="footer__text">Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек.</div>
+          <ul class="payment">
+            <li class="payment__item">
+              <img src="img/icons/payment-visa.png" alt="Visa">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-master.png" alt="MasterCard">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-wallet.png" alt="Wallet">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-mir.png" alt="Mir">
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__menu">
+          <p class="footer__title">ИНФОРМАЦИЯ</p>
+          <ul class="footer__list">
+            <li><a href="#">БРЕНДЫ</a></li>
+            <li><a href="#">ПРАЙСЫ</a></li>
+            <li><a href="#">КАТАЛОГИ <span>PDF</span></a></li>
+            <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">ОПТОВИКАМ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__menu">
+          <p class="footer__title">ТОВАРЫ</p>
+          <ul class="footer__list">
+            <li><a href="#">Ограничители</a></li>
+            <li><a href="#">Оконные ручки</a></li>
+            <li><a href="#">Дверные петли</a></li>
+            <li><a href="#">Дверные замки</a></li>
+            <li><a href="#">фиксаторы и накладки</a></li>
+            <li><a href="#">Дверные ручки</a></li>
+            <li><a href="#">Мебельные ручки</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <a href="tel:+74951165040" class="footer__phone">8 (495) 116-50-40</a>
+          <a href="tel:+74992420380" class="footer__phone">8 (499) 242-03-80</a>
+          <p class="footer__comment">Звонок из Москвы бесплатный</p>
+          <div class="footer__time">
+            <b>Время работы:</b>
+            <p>пн-пт.<br>9:30-20:00</p>
+            <p>cб-вс.<br>10:00-18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>2002 - 2020 г. — Интернет-магазин Villin</span>
+        <a href="#">Политика конфеденциальности</a>
+        <p class="footer__seo">Продвижение сайта — <a href="#">Seo-Mark.ru</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.promo__slider', {
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.promo__next',
+        prevEl: '.promo__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.brand__slider', {
+      navigation: {
+        nextEl: '.brand__next',
+        prevEl: '.brand__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+  
+  <script>
+  //Mobile nav
+  $('.nav__btn').click(function() {
+    $('.nav__list').slideToggle();
+    $(this).toggleClass('nav__btn--close');
+  });
+  
+  if (window.innerWidth < 1022) {
+    $('.nav__down').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('nav__down--top');
+    });
+  }
+  </script>
+</body>
+</html>
