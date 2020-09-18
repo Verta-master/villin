@@ -203,12 +203,12 @@
           <div class="product__info">
             <div class="product__top">
               <a href="#" class="product__brand">
-                <img src="img/images/brand-5.jpg" alt="">
+                <img src="img/images/brand-5.jpg" alt="Brand">
               </a>
               <a href="#" class="product__download" download>каталог pdf</a>
-              <div class="product__presence">В наличии <img src="img/icons/indicator.png" alt="В наличии"></div>
+              <div class="product__presence"><span>В наличии</span><img src="img/icons/indicator.png" alt="В наличии"></div>
             </div>
-            <h1 class="product__title">Дверная ручка Venezia "QUATTORDICI" D100 матовый хром</h1>
+            <h1 class="product__title">Дверная ручка Venezia "QUATTORDICI" D100<br>матовый хром</h1>
             <table class="product__table">
               <tr>
                 <td>Производитель</td>
@@ -242,6 +242,7 @@
               <a href="#" class="btn product__btn">Купить</a>
             </form>
             <div class="product__payment">
+              <span>Способы оплаты</span>
               <ul class="payment">
                 <li class="payment__item">
                   <img src="img/icons/payment-visa.png" alt="Visa">
@@ -258,22 +259,22 @@
               </ul>
             </div>
             <div class="product__block">
-              <div class="product__top">
+              <div class="product__header">
                 <p class="product__subtitle">Условия доставки</p>
-                <a href="#" class="more">Подробнее &rarr;</a>
+                <a href="#" class="more"><span>Подробнее</span></a>
               </div>
               <p>До 3000 руб. — самовывоз,<br>От 3000 руб. в пределах МКАД — 350 руб.<br>Доставка за МКАД — доп. 50 рублей за 1 км.</p>
             </div>
             <div class="product__block">
-              <div class="product__top">
+              <div class="product__header">
                 <p class="product__subtitle">Описание</p>
               </div>
               <p>Уникальная не имеющая аналогов дверная ручка<br>- Футуристический дизайн, при этом ручка очень удобно ложиться в руку<br>- Иновационная запатентованная система подшипников - это очень мягкий и плавный нажим без каких либо люфтов<br>- Достаточно просто прикоснуться до дверной ручки "QUATTORDICI" чтобы почувствовать колосальную разницу в легкости нажима и элегантности самой конструкции<br>Особенная дверная ручка для настоящих ценителей качества</p>
             </div>
             <div class="product__block">
-              <div class="product__top">
+              <div class="product__header">
                 <p class="product__subtitle">Оптовым покупателям</p>
-                <a href="#" class="more">Подробнее &rarr;</a>
+                <a href="#" class="more"><span>Подробнее</span></a>
               </div>
               <p>Компания РФМ ЛОКС осуществляет оптовую продажу товаров, представленных на нашем сайте.</p>
             </div>
@@ -614,7 +615,7 @@
 
   <!-- Sliders -->
   <script>
-    var mySwiper = new Swiper ('.similar__slider--01', {
+    var swiper1 = new Swiper ('.similar__slider--01', {
       navigation: {
         nextEl: '.similar__next--01',
         prevEl: '.similar__prev--01',
@@ -624,6 +625,75 @@
       preventClicksPropagation: false,
       slidesPerView: 5,
       spaceBetween: 33,
+      loop: true,
+      breakpoints: {
+        1260: {
+          slidesPerView: 4,
+        },
+        1022: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    
+    var swiper2 = new Swiper ('.similar__slider--02', {
+      navigation: {
+        nextEl: '.similar__next--02',
+        prevEl: '.similar__prev--02',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 5,
+      spaceBetween: 33,
+      loop: true,
+      breakpoints: {
+        1260: {
+          slidesPerView: 4,
+        },
+        1022: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    
+    var swiper3 = new Swiper ('.similar__slider--03', {
+      navigation: {
+        nextEl: '.similar__next--03',
+        prevEl: '.similar__prev--03',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 5,
+      spaceBetween: 33,
+      loop: true,
+      breakpoints: {
+        1260: {
+          slidesPerView: 4,
+        },
+        1022: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
     });
   </script>
   
