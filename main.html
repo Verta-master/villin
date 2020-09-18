@@ -33,7 +33,7 @@
         </a>
       </div>
       <nav class="menu">
-        <button type="button" class="menu__btn"></button>
+        <button type="button" class="menu__btn">Меню</button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link--active">ГЛАВНАЯ</a>
@@ -572,7 +572,7 @@
             </li>
           </ul>
         </div>
-        <nav class="footer__menu">
+        <nav class="footer__menu footer__menu--info">
           <p class="footer__title">ИНФОРМАЦИЯ</p>
           <ul class="footer__list">
             <li><a href="#">БРЕНДЫ</a></li>
@@ -583,7 +583,7 @@
             <li><a href="#">ОПТОВИКАМ</a></li>
           </ul>
         </nav>
-        <nav class="footer__menu">
+        <nav class="footer__menu footer__menu--goods">
           <p class="footer__title">ТОВАРЫ</p>
           <ul class="footer__list">
             <li><a href="#">Ограничители</a></li>
@@ -645,6 +645,14 @@
       slidesPerView: 4,
       spaceBetween: 30,
       loop: true,
+      breakpoints: {
+        1022: {
+          slidesPerView: 3,
+        },
+        480: {
+          slidesPerView: 2,
+        }
+      }
     });
   </script>
   
@@ -666,6 +674,10 @@
     $('.nav__down').click(function() {
       $(this).next().slideToggle();
       $(this).toggleClass('nav__down--top');
+    });
+    
+    $('.footer__title').click(function() {
+      $(this).next().slideToggle();
     });
   }
   </script>
