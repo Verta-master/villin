@@ -40,6 +40,19 @@
     margin-right: 0;
     justify-content: space-between;
   }
+  .product__imgs,
+  .product__info {
+    width: 48%;
+  }
+  .product__top {
+    flex-wrap: wrap;
+  }
+  .product__img {
+    height: 475px;
+  }
+  .product__payment .payment__item {
+    margin-left: 10px;
+  }
 }
 //--------------------------------------------
 @media (max-width: 1022px) {
@@ -166,6 +179,13 @@
     background-image: url(../img/icons/icon-menu-cross-white.svg);
     background-size: 24px 24px;
   }
+  .product__columns {
+    flex-direction: column-reverse;
+  }
+  .product__imgs,
+  .product__info {
+    width: 100%;
+  }
 }
 
 //--------------------------------------------
@@ -210,6 +230,37 @@
   }
   .footer__block {
     width: 50%;
+  }
+  .product__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product__download {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .product__presence {
+    margin-left: 0;
+  }
+  .product__price {
+    font-size: 36px;
+  }
+  .product__payment {
+    display: block;
+  }
+  .product__payment .payment__item {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .similar__prev,
+  .similar__next {
+    bottom: 0;
+    top: auto;
+  }
+  .similar .wrapper {
+    padding-bottom: 50px;
   }
 }
 
@@ -274,5 +325,40 @@
   }
   .header-new__phones a {
     display: block;
+  }
+  .product__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .product__table {
+    font-size: 14px;
+  }
+  .product__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product__price {
+    margin-bottom: 20px;
+  }
+  .product__payment {
+    padding: 15px;
+  }
+  .product__header {
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    
+    .more {
+      position: absolute;
+      top: 120%;
+      right: 0;
+    }
+  }
+  .product__img {
+    height: auto;
+  }
+  .similar .title-2 {
+    padding-bottom: 10px;
   }
 }

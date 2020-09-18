@@ -1,5 +1,5 @@
 .product {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .product__wrap,
@@ -105,6 +105,7 @@
 .product__table {
   width: 100%;
   margin-bottom: 50px;
+  margin-top: 35px;
   font-size: 16px;
   border-collapse: collapse;
   border-top: 1px solid #182639;
@@ -136,7 +137,7 @@
 
 .product__wrap {
   align-items: flex-end;
-  margin-bottom: 59px;
+  margin-bottom: 55px;
 }
 
 .product__price {
@@ -196,8 +197,8 @@
 }
 
 .product__btn {
-  width: 396px;
-  height: 81px;
+  width: 395px;
+  height: 80px;
   max-width: 100%;
   margin-bottom: 55px;
   font-weight: bold;
@@ -221,7 +222,7 @@
 }
 
 .product__block {
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 16px;
   line-height: 1.8;
   
@@ -239,7 +240,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 21px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #182639;
 }
 
@@ -252,6 +254,8 @@
 .more {
   position: relative;
   display: block;
+  padding-right: 45px;
+  padding-top: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -261,18 +265,14 @@
   text-decoration: none !important;
   .transition();
   
-  span {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
   &::after {
     content: "\2192";
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     color: inherit;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
   }
   

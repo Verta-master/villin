@@ -1,11 +1,12 @@
 .similar {
-  margin-bottom: 120px;
+  margin-bottom: 95px;
   
   .wrapper {
     position: relative;
   }
   .title-2 {
-    margin-bottom: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -17,11 +18,23 @@
   box-sizing: border-box;
   position: relative;
   height: auto;
+  
+  .hit__img {
+    height: 305px;
+  }
+  
+  &:hover,
+  &:active {
+    .hit__title {
+      color: @gold;
+      .transition();
+    }
+  }
 }
 
 .similar__prev,
 .similar__next {
-  top: 0;
+  top: 5px;
   margin-top: 0;
   width: 40px;
   height: 40px;
@@ -46,4 +59,13 @@
 
 .similar__next {
   right: 15px;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.breadcrumbs__link {
+  font-size: 12px;
 }
