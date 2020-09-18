@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Villin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style-old.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header-new">
+    <div class="wrapper">
+      <div class="header-new__top">
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="Villin">
+          <p>фурнитура и светильники</p>
+        </a>
+        <form action="#" class="search search--new">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Поиск</span></button>
+        </form>
+        <div class="header-new__phones">
+          <div><a href="tel:+74951165040">8 (495) 116-50-40</a><a href="tel:+74992420380">8 (499) 242-03-80</a></div>
+          <span>звонок из Москвы бесплатный</span>
+        </div>
+        <a href="#" class="header-new__cart">
+          <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.44048 10.6667H3.97619L1 30H26L23.0238 10.6667H18.5595M8.44048 10.6667V6.05952C8.44048 3.26523 10.7057 1 13.5 1V1C16.2943 1 18.5595 3.26523 18.5595 6.05952V10.6667M8.44048 10.6667H18.5595M8.44048 10.6667V15.1979M18.5595 10.6667V15.1979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="header-new__number">3</span>
+        </a>
+      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn">Меню</button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">ГЛАВНАЯ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ТОВАРЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ДОСТАВКА и ОПЛАТА</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">БРЕНДЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">КАТАЛОГИ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ПРАЙСЫ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="wrapper">
+      <button type="button" class="nav__btn">Каталог</button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">фиксаторы и накладки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные замки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Дверные петли</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Оконные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem nav__subitem--active"><a href="#">Magnum</a></li>
+              <li class="nav__subitem"><a href="#">Ramos</a></li>
+              <li class="nav__subitem"><a href="#">Mestre</a></li>
+              <li class="nav__subitem"><a href="#">Bron-Tek</a></li>
+              <li class="nav__subitem"><a href="#">Coba</a></li>
+              <li class="nav__subitem"><a href="#">Venezia</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Ограничители</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Мебельные ручки</a>
+          <button type="button" class="nav__down">
+            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.89889 1.67135L5.65625 5.91398L1.41361 1.67135" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <ul class="nav__sublist">
+              <li class="nav__subitem"><a href="#">Option 1</a></li>
+              <li class="nav__subitem"><a href="#">Option 2</a></li>
+              <li class="nav__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__link breadcrumbs__link--active">Дверные ручки на розетке</span>
+      </div>
+    </nav>
+    
+    <section class="product">
+      <div class="wrapper">
+        <div class="product__columns">
+          <div class="product__imgs">
+            <a data-fancybox="gallery" href="img/images/card-1.jpg" class="product__img">
+              <img src="img/images/card-1.jpg" alt="Каталог">
+            </a>
+            <a data-fancybox="gallery" href="img/images/card-1.jpg" class="product__img">
+              <img src="img/images/card-2.jpg" alt="Каталог">
+            </a>
+            <a data-fancybox="gallery" href="img/images/card-1.jpg" class="product__img">
+              <img src="img/images/card-3.jpg" alt="Каталог">
+            </a>
+          </div>
+          <div class="product__info">
+            <div class="product__top">
+              <a href="#" class="product__brand">
+                <img src="img/images/brand-5.jpg" alt="">
+              </a>
+              <a href="#" class="product__download" download>каталог pdf</a>
+              <div class="product__presence">В наличии <img src="img/icons/indicator.png" alt="В наличии"></div>
+            </div>
+            <h1 class="product__title">Дверная ручка Venezia "QUATTORDICI" D100 матовый хром</h1>
+            <table class="product__table">
+              <tr>
+                <td>Производитель</td>
+                <td><a href="#">Venezia</a></td>
+              </tr>
+              <tr>
+                <td>Страна</td>
+                <td>Италия</td>
+              </tr>
+              <tr>
+                <td>Покрытие</td>
+                <td>Матовый хром</td>
+              </tr>
+              <tr>
+                <td>Материал</td>
+                <td>Латунь</td>
+              </tr>
+            </table>
+            <form action="#" class="product__form">
+              <div class="product__wrap">
+                <div class="product__price">17 336,66р.</div>
+                <div class="product__number">
+                  <span>Количество</span>
+                  <div class="product__num">
+                    <button type="button" class="product__change product__change--minus">-</button>
+                    <input type="text" class="product__value" value="12">
+                    <button type="button" class="product__change product__change--plus">+</button>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn product__btn">Купить</a>
+            </form>
+            <div class="product__payment">
+              <ul class="payment">
+                <li class="payment__item">
+                  <img src="img/icons/payment-visa.png" alt="Visa">
+                </li>
+                <li class="payment__item">
+                  <img src="img/icons/payment-master.png" alt="MasterCard">
+                </li>
+                <li class="payment__item">
+                  <img src="img/icons/payment-wallet.png" alt="Wallet">
+                </li>
+                <li class="payment__item">
+                  <img src="img/icons/payment-mir.png" alt="Mir">
+                </li>
+              </ul>
+            </div>
+            <div class="product__block">
+              <div class="product__top">
+                <p class="product__subtitle">Условия доставки</p>
+                <a href="#" class="more">Подробнее &rarr;</a>
+              </div>
+              <p>До 3000 руб. — самовывоз,<br>От 3000 руб. в пределах МКАД — 350 руб.<br>Доставка за МКАД — доп. 50 рублей за 1 км.</p>
+            </div>
+            <div class="product__block">
+              <div class="product__top">
+                <p class="product__subtitle">Описание</p>
+              </div>
+              <p>Уникальная не имеющая аналогов дверная ручка<br>- Футуристический дизайн, при этом ручка очень удобно ложиться в руку<br>- Иновационная запатентованная система подшипников - это очень мягкий и плавный нажим без каких либо люфтов<br>- Достаточно просто прикоснуться до дверной ручки "QUATTORDICI" чтобы почувствовать колосальную разницу в легкости нажима и элегантности самой конструкции<br>Особенная дверная ручка для настоящих ценителей качества</p>
+            </div>
+            <div class="product__block">
+              <div class="product__top">
+                <p class="product__subtitle">Оптовым покупателям</p>
+                <a href="#" class="more">Подробнее &rarr;</a>
+              </div>
+              <p>Компания РФМ ЛОКС осуществляет оптовую продажу товаров, представленных на нашем сайте.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="similar">
+      <div class="wrapper">
+        <p class="title-2">С этим товаром покупают</p>
+        <div class="swiper-container similar__slider similar__slider--01">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-1.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Накладка дверная квадратная под ключ буратино Venezia Unique KEY-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-2.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Фиксатор поворотный квадратный Venezia Unique WC-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-3.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">B01006.50.06 Замок межкомнатный WC ригель защёлка AGB CENTRO</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-4.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Дверная петля универсальная латунная с круглым колпачком Venezia CRS010 102x76x3</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-5.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Упор дверной напольный Venezia ST4</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev similar__prev similar__prev--01">&lsaquo;</div>
+        <div class="swiper-button-next similar__next similar__next--01">&rsaquo;</div>
+      </div>
+    </section>
+    
+    <section class="similar">
+      <div class="wrapper">
+        <p class="title-2">Похожие товары</p>
+        <div class="swiper-container similar__slider similar__slider--02">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-1.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Накладка дверная квадратная под ключ буратино Venezia Unique KEY-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-2.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Фиксатор поворотный квадратный Venezia Unique WC-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-3.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">B01006.50.06 Замок межкомнатный WC ригель защёлка AGB CENTRO</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-4.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Дверная петля универсальная латунная с круглым колпачком Venezia CRS010 102x76x3</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-5.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Упор дверной напольный Venezia ST4</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev similar__prev similar__prev--02">&lsaquo;</div>
+        <div class="swiper-button-next similar__next similar__next--02">&rsaquo;</div>
+      </div>
+    </section>
+    
+    <section class="similar">
+      <div class="wrapper">
+        <p class="title-2">Вы смотрели</p>
+        <div class="swiper-container similar__slider similar__slider--03">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-1.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Накладка дверная квадратная под ключ буратино Venezia Unique KEY-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-2.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Фиксатор поворотный квадратный Venezia Unique WC-20</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-3.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">B01006.50.06 Замок межкомнатный WC ригель защёлка AGB CENTRO</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-4.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Дверная петля универсальная латунная с круглым колпачком Venezia CRS010 102x76x3</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide similar__slide">
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/similar-5.jpg" alt="Хиты">
+                </figure>
+                <div class="hit__info">
+                  <p class="hit__price">от <span>4364р.</span></p>
+                  <p class="hit__title">Упор дверной напольный Venezia ST4</p>
+                  <p class="hit__comment">матовый хром</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev similar__prev similar__prev--03">&lsaquo;</div>
+        <div class="swiper-button-next similar__next similar__next--03">&rsaquo;</div>
+      </div>
+    </section>
+    
+    <section class="benefits">
+      <div class="wrapper">
+        <p class="title-2">Наши преимущества</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-1.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Опыт</p>
+            <span>19 лет<br>опыта и качества</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-2.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Ассортимент</p>
+            <span>Ассортимент<br>20&nbsp;000 единиц</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-3.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Доставка</p>
+            <span>Доставка во все города РФ</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-4.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Свои склады</p>
+            <span>Склад более<br>500 м</span>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/icon-5.png" alt="Наши преимущества">
+            </figure>
+            <p class="benefits__title">Опции</p>
+            <span>Розница и опт</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="Logo">
+          </div>
+          <div class="footer__text">Villin.ru предлагает широкий ассортимент круглых фиксированных ручек (кнобов) и круглых поворотных ручек.</div>
+          <ul class="payment">
+            <li class="payment__item">
+              <img src="img/icons/payment-visa.png" alt="Visa">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-master.png" alt="MasterCard">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-wallet.png" alt="Wallet">
+            </li>
+            <li class="payment__item">
+              <img src="img/icons/payment-mir.png" alt="Mir">
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__menu footer__menu--info">
+          <p class="footer__title">ИНФОРМАЦИЯ</p>
+          <ul class="footer__list">
+            <li><a href="#">БРЕНДЫ</a></li>
+            <li><a href="#">ПРАЙСЫ</a></li>
+            <li><a href="#">КАТАЛОГИ <span>PDF</span></a></li>
+            <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">ОПТОВИКАМ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__menu footer__menu--goods">
+          <p class="footer__title">ТОВАРЫ</p>
+          <ul class="footer__list">
+            <li><a href="#">Ограничители</a></li>
+            <li><a href="#">Оконные ручки</a></li>
+            <li><a href="#">Дверные петли</a></li>
+            <li><a href="#">Дверные замки</a></li>
+            <li><a href="#">фиксаторы и накладки</a></li>
+            <li><a href="#">Дверные ручки</a></li>
+            <li><a href="#">Мебельные ручки</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <a href="tel:+74951165040" class="footer__phone">8 (495) 116-50-40</a>
+          <a href="tel:+74992420380" class="footer__phone">8 (499) 242-03-80</a>
+          <p class="footer__comment">Звонок из Москвы бесплатный</p>
+          <div class="footer__time">
+            <b>Время работы:</b>
+            <p>пн-пт.<br>9:30-20:00<br>cб-вс.<br>10:00-18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>2002 - 2020 г. — Интернет-магазин Villin</span>
+        <a href="#">Политика конфеденциальности</a>
+        <p class="footer__seo">Продвижение сайта — <a href="#">Seo-Mark.ru</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.similar__slider--01', {
+      navigation: {
+        nextEl: '.similar__next--01',
+        prevEl: '.similar__prev--01',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 5,
+      spaceBetween: 33,
+    });
+  </script>
+  
+  <script>
+  //Mobile nav
+  $('.nav__btn').click(function() {
+    $('.nav__list').slideToggle();
+    $(this).toggleClass('nav__btn--close');
+  });
+  
+  if (window.innerWidth < 1022) {
+    $('.nav__down').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('nav__down--top');
+    });
+    
+    $('.footer__title').click(function() {
+      $(this).next().slideToggle();
+    });
+  }
+  </script>
+</body>
+</html>
