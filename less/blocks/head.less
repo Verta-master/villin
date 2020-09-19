@@ -1,0 +1,42 @@
+@media (max-width: 766px) {
+  .search {
+    display: none;
+  }
+  .header-new__top {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .header-new__phones {
+    order: 1;
+    padding-left: 0;
+    margin-bottom: 0;
+    
+    &::before,
+    a:last-of-type,
+    span {
+      display: none;
+    }
+    
+    a:first-of-type {
+      width: 30px;
+      height: 30px;
+      margin-right: 0;
+      font-size: 0;
+      background-image: url(../img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .logo {
+    order: 2;
+    width: 130px;
+    margin-bottom: 0;
+    
+    p {
+      font-size: 10px;
+    }
+  }
+  .header-new__cart {
+    order: 3;
+  }
+}
